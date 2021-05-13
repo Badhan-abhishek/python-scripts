@@ -1,10 +1,18 @@
 import os
-os.listdir()
+import sys
 
+# To be tested with CSV data 
+# file_type = int(input('''
+# 	Please choose file type
+# 	1) JSON
+# 	2) CSV
+# 	Type down number as option:
+# 	'''))
+# if file_type != 1 and file_type != 2:
+# 	sys.exit('Wrong selection')
+	
 # Get directory path
-directory = input("Please enter directory where json files exists: ")
-
-# os.system('cd {directory}'.format(directory=directory))
+directory = input("Please enter valid directory where json files exists: ")
 
 # Get DB name from user
 db = input("Enter your db name: ")
