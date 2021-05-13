@@ -10,7 +10,7 @@
 - :warning: Do not use with production database. Due to limitations of ```mongoimport``` some data may throw errors while restoring.
 
 ## 2 mongo_json_collection.py
-- It will take path of folder containing pdf/docx/jpg etc files and will convert them to JSON-like format.
+- It will take path of folder containing pdf/docx/jpg etc files as input and will convert them to JSON-like format.
 - Format of result will be: 
 `
 {
@@ -27,3 +27,4 @@
         }` 
 - Limitations:
     - Currently it will only identify "_" as seperator.
+    - It will not return relative path of the file because it is bad practice to use relative path for assets.
